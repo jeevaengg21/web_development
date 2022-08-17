@@ -1,0 +1,18 @@
+DNS - Domain name server
+
+surya - 67890123
+
+67890123 - Result website
+
+(Browser)www.google.com -> ISP (Jio) -> DNS
+		<- 123.123.211.211
+123.123.211.211 -> ISP
+Home page
+
+Webpage:
+
+1. HTML - Hypertext markup language - To build the application UI with html elements
+2. CSS - Cascading Sytle sheet - Beautify the elements
+3. JavaScript (JS) - Do'able, action, behaviour
+
+HTML -> CSS -> JS
