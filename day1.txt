@@ -16,3 +16,15 @@ Webpage:
 3. JavaScript (JS) - Do'able, action, behaviour
 
 HTML -> CSS -> JS
+
+
+git clone git@github.com:jeevaengg21/web_development.git
+ssh-keygen -t ed25519 -C jeevaengg21@gmail.com
+git status
+git add .
+git commit -am"initial commit"
+git push
+
+git config --global user.email "your@emal.com"
+git config --global user.name "your_name"
+

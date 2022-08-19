@@ -1,0 +1,16 @@
+Git:
+
+* It is distributed version control system
+* helps team to collabarate on development and code review.
+
+Git Repository Provider:
+	1. Github
+	2. Gitlab
+	3. Bitbucket
+	4. Azure
+	and others
+
+Which repository we gonna use for training?
+
+* For our usecase we gonna use the Github
+* Everyone must have Github account
