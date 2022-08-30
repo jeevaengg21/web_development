@@ -1,0 +1,17 @@
+body {
+    background-color: darkcyan; color:white
+}
+.form-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table thead,
+        tbody,
+        th,
+        tr,
+        td {
+            border: white solid 1px;
+            padding: 10px;
+            border-spacing: 0px;
+        }

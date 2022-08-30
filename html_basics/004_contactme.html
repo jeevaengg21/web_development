@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact me</title>
+    <!-- element id, TAG, classname -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contactme.css">
+</head>
+
+<body>
+    <a href="003_structurehtml.html">Home</a>
+    <form method="post" action="mailto:jeevaengg21@gmail.com" enctype="text/plain">
+
+        <h1>Contact me</h1>
+        <div class="form-input">
+            <label>Name</label>
+            <input type="text" name="Fullname" required>
+        </div>
+        <div class="form-input">
+            <label>Email</label>
+            <input type="email" name="Email" required>
+        </div>
+        <div class="form-input">
+            <label>About you</label>
+            <textarea rows="2" name="About you"></textarea>
+        </div>
+        <div id="form-submit-div">
+            <button type="submit">Submit</button>
+        </div>
+        <table>
+            <thead>
+                <th>Organization</th>
+                <th>Role</th>
+                <th>Service period (years)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Solverminds Solutions and Technologies Pvt. Ltd.</td>
+                    <td>Technical Lead</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Genesys Telecommunication India</td>
+                    <td>Pricipal software engineer</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
