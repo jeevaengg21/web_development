@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Write style on page level is not a good practice, for easy understanding this page is having the inline CSS-->
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            p {
+                font-weight: 400;
+                color: darkblue;
+            }
+
+            .desktop-feature {
+                visibility: hidden
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is
+        "lightblue", otherwise it is "lightgreen".</p>
+
+    <div class="desktop-feature">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+    </div>
+
+</body>
+
+</html>

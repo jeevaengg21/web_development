@@ -4,18 +4,33 @@
 <head>
 	<title>Web Development</title>
 	<style>
-		.my-flexbox {
+		.my-flex-box {
 			display: flex;
-			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		@media only screen and (max-width: 700px) {
+			body {
+				background-color: antiquewhite;
+			}
+
+			.my-flex-box {
+				flex-direction: column;
+			}
+		}
+
+		.my-flex-box div {
+			background-color: aqua;
+			margin: 10px;
 		}
 	</style>
 </head>
 
 <body>
 	<h1>Web development</h1>
-	<div class="my-flexbox">
+	<div class="my-flex-box">
+		<!--Course roadmap-->
 		<div>
-			<!--Course roadmap-->
 			<h4>Course roadmap</h4>
 			<div>
 				<h3>Day 1</h3>
@@ -57,40 +72,22 @@
 					<li>CSS best practices</li>
 				</ol>
 			</div>
-			<div>
-				<h3>Day 5</h3>
-				<ol>
-					<li>Git branching</li>
-					<li>CSS - Stylesheet Importance</li>
-					<ol>
-						<li>To maintain the same UI standard across the application</li>
-						<li>Inline sytle must be avoid.</li>
-						<li>Even component or page specific CSS could be maintained in style sheets.</li>
-						<li>Helps to avoid duplicate work.</li>
-						<li>Easy to manage, change.</li>
-					</ol>
-					<li>CSS Layouts</li>
-					<ol>
-						<li>Table layout</li>
-						<li>Flexbox layout</li>
-						<li>Responsive design</li>
-					</ol>
-					<li>Git Merge</li>
-				</ol>
-			</div>
 		</div>
-		<!--Exercises-->
+		<!--Exercise-->
 		<div>
-			<h3>Exercise</h3>
-			<ol>
+			<h3>Exercise </h3>
+			<ul>
 				<li>Create your resume using HTML</li>
-				<li>Prepare documentation for Git command with HTML and CSS</li>
-				<li>Transform your resume page <a
-						href="https://www.w3schools.com/css/css3_flexbox_responsive.asp">Responsive Website using
-						Flexbox</a> </li>
-			</ol>
-
+				<li>Document git commands </li>
+			</ul>
 		</div>
+		<div>
+			<h3>Training time details</h3>
+		</div>
+		<div>
+			<h3>Training time details</h3>
+		</div>
+
 	</div>
 </body>
 
