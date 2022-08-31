@@ -1,9 +1,15 @@
 body {
     background-color: darkcyan; color:white
 }
+
 .form-input {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.username{
+    font-size: 16px;
+    font-weight: 400;
 }
 
 table thead,
