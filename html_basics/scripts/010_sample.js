@@ -3,10 +3,20 @@ const bId = "input_b"
 const resultId = "label_result"
 const history_listId = "history_list"
 
+/**
+ * Takes <i>id</i> as an input and Search for the element in document and retuns it
+ * 
+ * @param {*} id id of the target element to be found
+ * @returns doucment element if found
+ */
 function getElement(id) {
     return document.getElementById(id)
 }
 
+/**
+ * 
+ * @param result 
+ */
 function updateResult(result) {
     document.getElementById(resultId).innerText = result;
 }
@@ -38,20 +48,55 @@ function sum() {
     clear()
 }
 
+/**
+ * Clear the input elements and result element
+ */
 function clear() {
     getElement(aId).value = ""
     getElement(bId).value = ""
     getElement(resultId).innerText = ""
 }
 
+/**
+ * Add the operation history to the form
+ * 
+ * @param {*} a Input 1
+ * @param {*} b Input 2
+ * @param {*} c Result value
+ */
 function addToHistory(a, b, c) {
     let message = "A = " + a + ", B= " + b + ", Result= " + c
     console.log(message)
 
-    const li = document.createElement('li');
+    /**
+     * textNode -> b -> i -> span -> li -> ol
+     */
 
+    const li = document.createElement('li');
     const messageEl = document.createTextNode(message);
-    li.appendChild(messageEl)
-    document.getElementById(history_listId).appendChild(li)
+    const bEl = document.createElement("b")
+    const iEl = document.createElement("i")
+    const spanEl = document.createElement("span")
+    // li.appendChild(messageEl)
+
+    bEl.appendChild(messageEl);
+    iEl.appendChild(bEl)
+    spanEl.appendChild(iEl)
+    li.appendChild(spanEl)
+    // document.getElementById(history_listId).appendChild(li)
+
+    /** approach 2 */
+
+    const history_item = `
+            <span>
+                <i>
+                    <b>`+ message + `</b>
+                </i>
+            </span>
+        `
+    const liNew = document.createElement('li');
+    liNew.innerHTML = history_item;
+    document.getElementById(history_listId).appendChild(liNew)
+
 
 }
