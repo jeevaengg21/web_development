@@ -35,6 +35,7 @@ for (let c of myname) {
     console.log(c)
 }
 
+
 /** forEach */
 function prepareJuice(item) {
     console.log(item + "Juice is ready!!")
