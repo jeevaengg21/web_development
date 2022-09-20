@@ -3,6 +3,7 @@
 
 <head>
 	<title>Web Development</title>
+	<script src="html_basics/scripts/index.js"></script>
 	<style>
 		.my-flexbox {
 			display: flex;
@@ -11,7 +12,7 @@
 	</style>
 </head>
 
-<body>
+<body onload="init()">
 	<h1>Web development</h1>
 	<div class="my-flexbox">
 		<div>
@@ -152,21 +153,23 @@
 					<li>Coding principles and best practices</li>
 				</ol>
 			</div>
+			<div>
+				<h3>Day 14</h3>
+				<ol>
+					<li>Discussion around document element creation</li>
+					<li>Compose elements in html format and append to form</li>
+					<li>Real time usecase discussion</li>
+					<li>How to add documentation to a function</li>
+					<li>Upgrade the training page to render the exercise content programatically</li>
+					<li>How to trigger a function on body load event</li>
+				</ol>
+			</div>
+
 		</div>
 		<!--Exercises-->
 		<div>
 			<h3>Exercise</h3>
-			<ol>
-				<li>Create your resume using HTML</li>
-				<li>Prepare documentation for Git command with HTML and CSS</li>
-				<li>Transform your resume page <a
-						href="https://www.w3schools.com/css/css3_flexbox_responsive.asp">Responsive Website using
-						Flexbox</a> </li>
-				<li>Compose your profile in JSON object</li>
-				<li>Simple Calculator script</li>
-				<li>Array as queue and stack using pop() function</li>
-			</ol>
-
+			<ol id="exercise_list"></ol>
 		</div>
 	</div>
 </body>
