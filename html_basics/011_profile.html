@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="scripts/011_profile.js"></script>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #education,
+        #working_experience,
+        #personal_information {
+            background-color: yellow;
+            color: black;
+        }
+
+
+        #pro {
+            background-color: lightblue;
+            color: black
+        }
+    </style>
+
+
+</head>
+
+
+<body onload="init()">
+
+    <div id="pro">
+        <h2 style="text-align:center">PROFILE</h2>
+        <h2 id="name"></h2>
+        <h2 id="emailid"></h2>
+        <h2 id="mobileno"></h2>
+    </div>
+
+    <div id="pro">
+        <h2 style="text-align:center">OBJECTIVE</h2>
+        <p id="objective"></p>
+    </div>
+
+    <div id="pro">
+        <h2 style="text-align:center">EDUCATIONAL INFORMATION</h2>
+        <table id="education" class="center">
+            <thead>
+                <tr>
+                    <th>School/College Name</th>
+                    <th>Name of the Course</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="pro">
+        <h2 style="text-align:center">EXPERIENCE INFORMATION</h2>
+        <table id="working_experience" class="center">
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Experience in months/years</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="pro">
+        <h2 style="text-align:center">INTEREST DETAILS</h2>
+        <ul id="interest">
+        </ul>
+    </div>
+
+    <div id="pro">
+        <h2 style="text-align:center">PERSONAL INFORMATION</h2>
+        <!-- table layout to organize the data-->
+        <table id="personal_information" class="center">
+            <tr id="per_info">
+                <label>Sex</label>
+                <label id="sex"></label>
+            </tr>
+            <tr id="per_info1"></tr>
+            <tr id="per_info2"></tr>
+            <tr id="per_info3"></tr>
+            <tr id="per_info4"></tr>
+            <tr id="per_info5"></tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -13,18 +13,40 @@ const exerciseList = [
  * function
  */
 function init() {
-    composeExercisePanel();
+    // composeExercisePanel();
+    composeExercisePanelUsingMap();
+}
+
+function createExcerciseElements(value) {
+    const liEl = document.createElement("li");
+    liEl.textContent = value
+    return liEl
+}
+
+function composeExercisePanelUsingMap() {
+    // get ol list element
+    const exercise_listEl = document.getElementById("exercise_list")
+    // tranform / convert text into li element
+    const liElList = exerciseList.map(createExcerciseElements)
+    // iterate and append element to ol list
+    liElList.forEach(function (liEl) {
+        exercise_listEl.appendChild(liEl)
+    })
 }
 
 /**
  * 
  */
 function composeExercisePanel() {
+    // get ol list element
     const exercise_listEl = document.getElementById("exercise_list")
 
     exerciseList.forEach(function (exercise_text) {
+        // create element li
         const liEl = document.createElement("li");
         liEl.textContent = exercise_text
+        // appent element to ol list
         exercise_listEl.appendChild(liEl);
     })
 }
+

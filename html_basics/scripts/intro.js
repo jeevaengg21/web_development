@@ -1,3 +1,4 @@
+"use strict";
 console.info("Application JS execution started")
 console.error("there was an error") // do disclose any error which affects user and also that user has take some action.
 console.debug("debugging")
