@@ -100,3 +100,23 @@ function addToHistory(a, b, c) {
 
 
 }
+
+const ticket_to_mars = [{ name: "prabha", vaccinated: true }, { name: "surya", vaccinated: true }, { name: "jeeva", vaccinated: false }]
+
+
+
+function isEligibleForTraining(tickets) {
+
+    return tickets.some((t) => t.vaccinated)
+
+}
+
+
+
+
+function isEligibleForTravel(tickets) {
+    return tickets.every((t) => t.vaccinated)
+}
+
+console.log("isEligibleForTraining " + isEligibleForTraining(ticket_to_mars));
+console.log("isEligibleForTravel " + isEligibleForTravel(ticket_to_mars));
