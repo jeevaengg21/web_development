@@ -59,3 +59,56 @@ const coronaTest = new Promise((myResolve, myReject) => {
 coronaTest
     .then((result) => console.log("Test Result :" + result))
     .catch((error) => console.log("Inform the patient that, ", error));
+
+/** convert string into array of character */
+
+let username = "Praba"
+let charArr = []
+for (let c of username) {
+    charArr.push(c)
+}
+console.log(charArr)
+
+console.log(Array.from(username))
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+console.log("Array keys ", fruits.keys())
+
+for (let index of fruits.keys()) {
+    console.log(index)
+}
+
+fruits.forEach((f, index) => console.log(f, index))
+
+/** Array find */
+
+const ages = [4, 9, 16, 12, 30, 25, 29];
+let firstAdult = ages.find(isAdult);
+
+function isAdult(value, index, array) {
+    return value > 18;
+}
+
+console.log(firstAdult)
+
+/** Array find */
+
+let firstAdultPosition = ages.findIndex(isAdult);
+
+
+console.log(firstAdultPosition)
+
+/** Object entries */
+
+
+for (let e of fruits.entries()) {
+    const index = e[0]
+    const value = e[1]
+    console.log("index ", index, " value ", value)
+}
+
+fruits.forEach((value, index) => console.log("index ", index, " value ", value))
+
+
+
